@@ -7,7 +7,7 @@ import { MdApps } from "react-icons/md";
 
 function Navbar() {
     return (
-        <div className="navbar flex items-center justify-between p-4 bg-gray-900 text-white">
+        <div className="navbar flex items-center justify-between p-4 bg-[#212121] text-white">
             <div className="flex items-center"> 
                 <RxHamburgerMenu className='text-2xl mr-4 cursor-pointer' />
                 <FaYoutube className='text-3xl text-red-600' />
@@ -18,9 +18,9 @@ function Navbar() {
                 <input
                     type="text"
                     placeholder="Search"
-                    className="w-full p-2 rounded-l-full bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-red-600"
+                    className="w-full p-2 rounded-l-full bg-[#212121] border border-gray-700 text-white focus:outline-none focus:border-red-600"
                 />
-                <button className="p-2.5 bg-gray-700 border border-gray-700 rounded-r-full hover:bg-gray-600">
+                <button className="p-2.5 bg-[#212121] border border-gray-700 rounded-r-full hover:bg-gray-600">
                     <AiOutlineSearch className="text-xl" />
                 </button>
             </div>
