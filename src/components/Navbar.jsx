@@ -17,7 +17,7 @@ function Navbar() {
     <div className="relative">
       <div className="navbar flex items-center justify-between p-4 bg-[#212121] text-white">
         <div className="flex items-center">
-          <RxHamburgerMenu className='text-2xl mr-4 cursor-pointer' onClick={toggleSidebar} />
+          <RxHamburgerMenu className='text-2xl mr-6 cursor-pointer' onClick={toggleSidebar} />
           <FaYoutube className='text-3xl text-red-600' />
           <span className='text-2xl font-bold ml-2 cursor-pointer'>YouTube</span>
         </div>
