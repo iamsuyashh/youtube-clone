@@ -26,9 +26,9 @@ function Navbar() {
           <input
             type="text"
             placeholder="Search"
-            className="w-full p-2 rounded-l-full bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-red-600"
+            className="w-full p-2 rounded-l-full bg-[#212121] border border-gray-700 text-white focus:outline-none focus:border-red-600"
           />
-          <button className="p-2 bg-gray-700 border border-gray-700 rounded-r-full hover:bg-gray-600">
+          <button className="p-2.5 bg-[#212121] border border-gray-700 rounded-r-full hover:bg-gray-600">
             <AiOutlineSearch className="text-xl" />
           </button>
         </div>
@@ -41,7 +41,7 @@ function Navbar() {
           <AiOutlineVideoCamera className='text-2xl mr-4 cursor-pointer hidden md:block' />
           <MdApps className='text-2xl mr-4 cursor-pointer hidden md:block' />
           <AiOutlineBell className='text-2xl mr-4 cursor-pointer hidden md:block' />
-          <div className="w-8 h-8 bg-gray-700 rounded-full cursor-pointer hidden md:block"></div>
+          <div className="w-8 h-8 marker:bg-[#212121] rounded-full cursor-pointer hidden md:block"><img className='rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbn7ohaA0u5ttRyf3wAQyyqRJCQsELLs1Mgw&s" alt="" /></div>
         </div>
       </div>
 

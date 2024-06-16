@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
-    <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+    <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={toggleSidebar}>
       <div className={`fixed inset-y-0 left-0 w-64 bg-[#212121] text-white p-4 transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'}`} onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-4">
           <span className="text-xl font-bold">Menu</span>
