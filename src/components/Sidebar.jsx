@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <IoClose className='text-xl cursor-pointer' onClick={toggleSidebar} />
         </div>
         <nav>
-          <a href="#home" className="flex items-center mb-4 hover:text-gray-300">
+          <a href="#home" className="flex items-center mb-4 hover:text-gray-400 ">
             <AiOutlineHome className='text-xl mr-4' />
             <span>Home</span>
           </a>
