@@ -1,14 +1,17 @@
 import React from 'react'
-import Spinner from './components/spinner'
 import Home from './pages/home'
+import { BrowserRouter, Routes ,Route} from 'react-router-dom'
+// import Search from './pages/Search'
+// import Watch from './pages/Watch'
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Home/>
-      <Spinner/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    {/* <Route path='/search' element={<Search/>}/>
+    <Route path='/watch/:id' element={<Watch/>}/> */}
+    </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App

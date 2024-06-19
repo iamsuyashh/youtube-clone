@@ -5,7 +5,7 @@ import { timeSince } from './timeSince';
 
 const API_KEY = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
 
-export const parseData = async (items) => {
+export const parseRecommendedData = async (items) => {
 
     try {
         const videoIds = [];
@@ -40,7 +40,6 @@ export const parseData = async (items) => {
 
 
         const parseData = [];
-        console.log(parseData)
         items.forEach((item, index) => {
             const { image: channelImage
             } = parsedChannelsData.find((data) => data.id === item.snippet.channelId);
@@ -63,9 +62,7 @@ export const parseData = async (items) => {
                         id: item.snippet.channelId,
                         image: channelImage,
                         name: item.snippet.channelTitle
-                       
                     },
-                    
                 });
             }
         });
