@@ -42,11 +42,9 @@ const youtubeSlice = createSlice({
                 state.nextPageToken = action.payload.nextPageToken;
             }
         })
-        builder.addCase(getRecommendedVideos.fulfilled,(state,action)=> {
-            if(action.payload && action.payload.parsedData){
-                state.recommendedVideo = action.payload.parsedData;
-            }
-        })
+        builder.addCase(getRecommendedVideos.fulfilled, (state, action) => {
+            state.recommendedVideos = action.payload;
+          });
         builder.addCase(getVideoDetails.fulfilled,(state,action)=> {
                 state.currentPlaying = action.payload;
         })
