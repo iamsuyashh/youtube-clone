@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../hooks/useApp";
 import { getVideoDetails } from "../store/reducers/getVideoDetails";
 import { getRecommendedVideos } from "../store/reducers/getRecommendedVideos";
 import Navbar from "../components/Navbar";
-import RecommendedVideos from "../components/Recommended";
+
 
 export default function Watch() {
   const { id } = useParams();
@@ -17,9 +17,9 @@ export default function Watch() {
 
   console.log(currentPlaying);
 
-  const recommendedVideo = useAppSelector(
-    (state) => state.youtubeApp.recommendedVideos
-  );
+  // const recommendedVideo = useAppSelector(
+  //   (state) => state.youtubeApp.recommendedVideos
+  // );
 
   useEffect(() => {
     if (id) {
